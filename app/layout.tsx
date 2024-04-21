@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import React from "react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <header className=" h-[8vh] w-full border-b fixed flex items-center justify-between px-5 bg-black">
+        <img src="/whitelogo.svg" alt="" className=" h-full" />
+        <div className=" space-x-10">
+          <Link href="/">Internships</Link>
+          <Link href="/">Student Ambassador</Link>
+        </div>
+        <div>
+        <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-slate-400  focus:ring-offset-slate-50">
+        Connect with us
+      </button>
+        </div>
+      </header>
+        {children}
+      </body>
     </html>
   );
 }
