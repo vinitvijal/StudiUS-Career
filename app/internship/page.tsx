@@ -3,7 +3,7 @@ import JobSection from '../../components/jobsection'
 
 function page() {
   return (
-    <div className=' min-h-screen w-full bg-slate-50 py-32 px-4'>
+    <div className=' min-h-screen w-full py-32 px-4 bg-zinc-100'>
       <JobSection />
     </div>
   )
