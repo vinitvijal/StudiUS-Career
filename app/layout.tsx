@@ -35,7 +35,7 @@ export default function RootLayout({
         </div>
       </header>
         {children}
-        <footer className=' h-18 border gap-4 p-4 flex flex-col'> 
+        <footer className=' h-18 border-t gap-4 p-4 flex flex-col'> 
         <div className=" flex justify-center items-center gap-8">
             <Link href={'/'} className=" border p-3 rounded-full hover:bg-slate-100">
                <Instagram size={20} /> 
