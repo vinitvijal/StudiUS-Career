@@ -4,7 +4,7 @@ import "./globals.css";
 import React from "react";
 import Link from "next/link";
 import { Instagram, LinkedinIcon, Mail } from "lucide-react";
-
+import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics /> 
       <body className={inter.className}>
       <header className=" h-[8vh] w-full border-b fixed flex items-center justify-between px-5 bg-black">
         <Link href={'/'} className=" h-full"><img src="/whitelogo.svg" alt="" className=" h-full" /></Link>
