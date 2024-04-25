@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Link from "next/link";
-import { Instagram, Linkedin, LinkedinIcon, Mail } from "lucide-react";
-import { IconBrandGmail } from "@tabler/icons-react";
+import { Instagram, LinkedinIcon, Mail } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,7 +49,7 @@ export default function RootLayout({
         </div>
         <div>
           <p className=" text-center text-gray-400">
-            © 2021 StudiUS. All rights reserved.
+            © 2024 StudiUS. All rights reserved.
           </p>
         </div>
     </footer>
