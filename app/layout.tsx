@@ -38,10 +38,10 @@ export default function RootLayout({
         {children}
         <footer className=' h-18 border-t gap-4 p-4 flex flex-col'> 
         <div className=" flex justify-center items-center gap-8">
-            <Link href={'/'} className=" border p-3 rounded-full hover:bg-slate-100">
+            <Link href={'https://www.instagram.com/studius.dev/'} className=" border p-3 rounded-full hover:bg-slate-100">
                <Instagram size={20} /> 
             </Link>
-            <Link href={'/'} className=" border p-3 rounded-full hover:bg-slate-100">
+            <Link href={'https://www.linkedin.com/company/studi-us/'} className=" border p-3 rounded-full hover:bg-slate-100">
                <LinkedinIcon size={20} /> 
             </Link>
             <Link href={'mailto:studius@vinucode.in'} className=" border p-3 rounded-full hover:bg-slate-100">
